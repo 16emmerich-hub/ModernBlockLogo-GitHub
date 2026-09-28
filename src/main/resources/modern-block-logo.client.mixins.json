@@ -1,0 +1,10 @@
+{
+    "required": true,
+    "package": "com.ae12357.modernblocklogo.mixin",
+    "compatibilityLevel": "JAVA_25",
+    "client": [
+        "TitleScreenMixin",
+        "LogoRendererMixin",
+        "MinecraftMixin"
+    ]
+}

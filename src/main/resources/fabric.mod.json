@@ -1,0 +1,32 @@
+{
+    "schemaVersion": 1,
+    "id": "modern-block-logo",
+    "version": "${version}",
+    "name": "Modern Block Logo",
+    "icon": "assets/modern-block-logo/icon.png",
+    "description": "Flying-block construction animation using the Minecraft title logo.",
+    "authors": [
+        "AE12357"
+    ],
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "com.ae12357.modernblocklogo.ModernBlockLogoClient"
+        ],
+        "modmenu": [
+            "com.ae12357.modernblocklogo.ModMenuIntegration"
+        ]
+    },
+    "mixins": [
+        {
+            "config": "modern-block-logo.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": ">=0.19.3",
+        "minecraft": "~26.1",
+        "java": ">=25",
+        "fabric-api": "*"
+    }
+}
